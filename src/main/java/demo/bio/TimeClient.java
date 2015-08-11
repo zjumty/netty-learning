@@ -27,7 +27,7 @@ public class TimeClient {
         BufferedReader in = null;
         PrintWriter out = null;
         try {
-            socket = new Socket("192.168.0.109", port);
+            socket = new Socket("120.26.48.118", port);
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out = new PrintWriter(socket.getOutputStream(), true);
             out.println("QUERY TIME ORDER");
